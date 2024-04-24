@@ -44,7 +44,7 @@ Route::get('/recover', [\App\Http\Controllers\AccountController::class, 'recover
 Route::get('/login', [\App\Http\Controllers\AccountController::class, 'login'])->name('site.login');
 Route::get('/logout', [\App\Http\Controllers\AccountController::class, 'logout'])->name('site.register');
 Route::prefix('/app')->group(function(){
-    Route::get('/generate', function() { echo 'generate'; })->name('app.generate');
-    Route::get('/remove', function() { echo 'remove'; })->name('app.remove');;
-    Route::get('/list', function() { echo 'list'; })->name('app.list');;
+    Route::get('/generate',  [\App\Http\Controllers\LinkController::class, 'generate'])->name('app.generate');
+    Route::get('/remove', function() { echo 'remove'; })->name('app.remove');
+    Route::get('/list', [\App\Http\Controllers\LinkController::class, 'list'])->name('app.list');
 });
