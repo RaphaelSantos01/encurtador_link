@@ -37,12 +37,17 @@ Route::get('/logout', function () {
     return 'Logout';
 });
 
+Route::get('/contato', function () {
+    return 'Contato';
+});
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('site.index');
 Route::get('/redirect', [\App\Http\Controllers\IndexController::class, 'redirect'])->name('site.redirect');
+Route::post('/contato', [\App\Http\Controllers\IndexController::class, 'contact'])->name('site.contato');
 Route::get('/register', [\App\Http\Controllers\AccountController::class, 'register'])->name('site.register');
 Route::get('/recover', [\App\Http\Controllers\AccountController::class, 'recover'])->name('site.recover');
 Route::get('/login', [\App\Http\Controllers\AccountController::class, 'login'])->name('site.login');
-Route::get('/logout', [\App\Http\Controllers\AccountController::class, 'logout'])->name('site.register');
+Route::get('/logout', [\App\Http\Controllers\AccountController::class, 'logout'])->name('site.logout');
+
 Route::prefix('/app')->group(function(){
     Route::get('/generate',  [\App\Http\Controllers\LinkController::class, 'generate'])->name('app.generate');
     Route::get('/remove', function() { echo 'remove'; })->name('app.remove');

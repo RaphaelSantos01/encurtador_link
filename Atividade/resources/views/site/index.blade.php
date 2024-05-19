@@ -13,9 +13,15 @@
 </head>
 
 <body>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-12">Index</div>
+<div class="container mt-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-6">
+            <div class="text-center bg-primary" style="color:white">
+                <h2>O Professor Diogo é o melhor!</h2>
+            </div>
+                @component('site.layouts._components.form_contato', ['light' => 'bg-light'])
+                @endcomponent
+            </div>
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

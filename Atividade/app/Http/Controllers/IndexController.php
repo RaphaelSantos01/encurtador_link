@@ -13,5 +13,10 @@ class IndexController extends Controller
     public function redirect(){
         return view('site.redirect');
     }
+
+    public function contact(){
+        var_dump($_POST);
+        return view('site.contato');
+    }
 }
 

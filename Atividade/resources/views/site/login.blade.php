@@ -32,7 +32,7 @@
                             </div>
                             <div class="mb-12 text-center">
                                 <button type="submit" class="mb-3 btn btn-primary">Acessar</button>
-                                <div class="mb-1">Registrar-se</div>
+                                <div class="mb-1"><a href="{{ route('site.register') }}">Registrar-se</a></div>
                             </div>
                         </form>
                     </div>
