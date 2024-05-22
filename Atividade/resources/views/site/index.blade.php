@@ -17,7 +17,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-6">
             <div class="text-center bg-primary" style="color:white">
-                <h2>O Professor Diogo é o melhor!</h2>
+                <h2>Conatate-nos!</h2>
             </div>
                 @component('site.layouts._components.form_contato', ['light' => 'bg-light'])
                 @endcomponent

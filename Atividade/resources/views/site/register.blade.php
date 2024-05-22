@@ -18,7 +18,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="card-title text-center mb-4">Registrar-se</h3>
+                        <h3 class="card-title text-center mb-4">Registre-se</h3>
                         <form>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
