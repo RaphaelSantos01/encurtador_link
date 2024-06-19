@@ -42,7 +42,7 @@ Route::get('/contato', function () {
 });
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('site.index');
 Route::get('/redirect', [\App\Http\Controllers\IndexController::class, 'redirect'])->name('site.redirect');
-Route::post('/contato', [\App\Http\Controllers\IndexController::class, 'contact'])->name('site.contato');
+Route::get('/contato', [\App\Http\Controllers\IndexController::class, 'contact'])->name('site.contato');
 Route::get('/register', [\App\Http\Controllers\AccountController::class, 'register'])->name('site.register');
 Route::get('/recover', [\App\Http\Controllers\AccountController::class, 'recover'])->name('site.recover');
 Route::get('/login', [\App\Http\Controllers\AccountController::class, 'login'])->name('site.login');

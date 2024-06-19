@@ -13,16 +13,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-6">
-                @component('site.layouts._components.form_contato', ['light' => 'bg-light'])
-                <p>A nossa equipe analisará o caso e entraremos em contato!</p>
-                <p>Tempo de resposta de resposta de 48 horas!</p>
-                @endcomponent
-            </div>
-        </div>
-    </div>
+    @component('site.layouts._components.form_contato', ['light' => 'bg-light'])
+    <p>A nossa equipe analisará o caso e entraremos em contato!</p>
+    <p>Tempo de resposta: até 48 horas!</p>
+    @endcomponent
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
